@@ -1,5 +1,7 @@
 ### Boot2Root #2
+
 #### Common With Writeup1
+
 #### IP Discovery
 ```sh
 ip addr show
